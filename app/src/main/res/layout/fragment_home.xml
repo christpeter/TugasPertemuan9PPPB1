@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header: Greeting and User Name -->
+        <TextView
+            android:id="@+id/greeting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Malam, Ikhwan Hanif pridaus"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- BNI Logo and Tagline -->
+        <ImageView
+            android:id="@+id/bni_logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_bni_logo" /> <!-- Placeholder for BNI logo -->
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Melayani Negeri, Kebanggaan Bangsa"
+            android:textColor="#555555"
+            android:textSize="12sp"
+            android:paddingTop="4dp" />
+
+        <!-- Saldo Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saldo"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F8F8"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:cornerRadius="8dp">
+
+            <!-- Account Name and Masked Balance -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IKHWAN HANIF FRIDAUZ"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BNI Taplus Muda | 7263-2938-2390-****"
+                android:textColor="#777777"
+                android:textSize="12sp"
+                android:paddingTop="4dp" />
+
+            <!-- Balance and Eye Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/balance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp *********"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/eye_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_eye" /> <!-- Placeholder for eye icon -->
+
+            </LinearLayout>
+
+            <!-- Withdraw and Deposit Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/withdraw_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FF6F00"
+                    android:text="Tarik Tunai"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/deposit_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FF6F00"
+                    android:text="Setor Tunai"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Shortcut Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shortcut Kamu"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginBottom="16dp">
+
+            <!-- Shortcut Buttons -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#F8F8F8"
+                android:text="Transfer Uang"
+                android:textColor="#333333" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#F8F8F8"
+                android:text="Virtual Account"
+                android:textColor="#333333" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#F8F8F8"
+                android:text="Pulsa / Data"
+                android:textColor="#333333" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#F8F8F8"
+                android:text="Menu Lengkap"
+                android:textColor="#333333" />
+        </GridLayout>
+
+        <!-- Insight BNI Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insight BNI"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Example Insight Card -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_bni_promo" /> <!-- Placeholder for promo image -->
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_bni_promo2" /> <!-- Placeholder for promo image -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>
